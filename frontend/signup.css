@@ -1,0 +1,236 @@
+body {
+    background-color: rgb(222, 172, 172);
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    background-color: #fbfbfb;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    margin: auto;
+    margin-top: 7%;
+    margin-right: 5%;
+    width: 40%;
+    padding: 20px;
+    /* border: 2px solid rgb(2, 0, 0); */
+}
+
+h2 {
+    color: #FC2779;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+form label {
+    display: block;
+    font-weight: 530;
+    margin-bottom: 5px;
+}
+
+form input,
+form select {
+    border: 2px solid #FC2779;
+    border-radius: 5px;
+    display: block;
+    font-size: 16px;
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 100%;
+}
+
+form input:focus,
+form select:focus {
+    outline: none;
+    border-color: #000000;
+}
+
+#name,
+#email,
+#mobile,
+#password {
+    width: 90%;
+}
+
+#gender {
+    width: 96%;
+}
+
+form button {
+    background-color: #FC2779;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px;
+    width: 100%;
+}
+
+form button:hover {
+    background-color: #8f0037;
+}
+
+.main {
+    display: flex;
+    width: 80%;
+    /* background-color: #ff69b4; */
+    margin: auto;
+    justify-content: space-between;
+}
+
+/* -----------------------------------------------------------------sant here ------------------------------------------------- */
+.sant {
+    width: 45%;
+    height: 32%;
+    border-radius: 50px;
+    /* border: 2px solid black; */
+    margin-top: 15%;
+    margin-left: 7%;
+
+}
+
+.sant img {
+    border-radius: 50px;
+    width: 100%;
+    height: 100%;
+    /* height: ; */
+}
+
+
+.slider {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.slide {
+    background-color: #f2f2f2;
+    text-align: center;
+    height: 200px;
+    line-height: 200px;
+}
+
+.my-div {
+    background-color: #d9d9d9;
+    height: 100px;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 100px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #FC2779;
+    z-index: 100;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin: 0 1rem;
+}
+
+nav a {
+    display: block;
+    padding: 1rem;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background-color: hsl(0, 0%, 33%);
+}
+
+#imag-1 img {
+    height: 70px;
+}
+
+
+/* ----------------------pop up part-------------------------------- */
+
+.sant {
+    position: relative;
+    overflow: hidden;
+}
+
+.sant img {
+    transition: transform 0.5s;
+}
+
+.sant:hover img {
+    transform: scale(0.5);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right, #FC2779, #c60d51);
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 20px;
+    margin-right: 10px;
+    line-height: 31px;
+    opacity: 0;
+    transition: opacity 2.6s;
+}
+
+.sant:hover .overlay {
+    opacity: 1;
+}
+
+/* --------------------extra part ------------------------------------------*/
+
+#already {
+    text-align: center;
+}
+
+#already a {
+    text-decoration: none;
+    color: #FC2779;
+}
+
+.div2 {
+    /* border: 2px solid black; */
+    width: 40%;
+    /* margin-left: 10%; */
+}
+
+.div2 h1 {
+    text-align: center;
+    margin-top: 65%;
+    color: #ffffff;
+}
+
+.div2 img {
+    width: 100%;
+    border-radius: 15%;
+}
+
+@media screen and (min-width: 400px) and (max-width: 900px) {
+    .main {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        justify-content: space-between;
+    }
+}
+@media screen and (max-width: 400px) {
+    .main {
+        display: flex;
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+</head>
+<style>
+    .slider {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .slide {
+        background-color: #f2f2f2;
+        text-align: center;
+        height: 200px;
+        line-height: 200px;
+    }
+
+    .my-div {
+        background-color: #d9d9d9;
+        height: 100px;
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+        line-height: 100px;
+    }
+
+    header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #FC2779;
+  z-index: 100;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin: 0 1rem;
+}
+
+nav a {
+  display: block;
+  padding: 1rem;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  background-color: hsl(0, 0%, 33%);
+}
+#imag-1 img{
+    height: 70px;
+}
+
+</style>
+
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="slider">
+        <div class="slide"><img src="https://tse4.mm.bing.net/th?id=OIP.HM664gtdbHVkOXvWG4X3LAHaE7&pid=Api&P=0" alt="">
+        </div>
+        <div class="slide"><img src="https://tse3.explicit.bing.net/th?id=OIP.4d7Emr_d4fJnEE6zK7pj_wHaFK&pid=Api&P=0"
+                alt=""></div>
+        <div class="slide"><img src="https://tse3.mm.bing.net/th?id=OIP.Pvwf9JCK8RQBmFHGNbhZOAHaDj&pid=Api&P=0" alt="">
+        </div>
+        <div class="slide"><img src="https://tse2.mm.bing.net/th?id=OIP.gOesXEnkak-LlgqBE1R_tAHaEz&pid=Api&P=0" alt="">
+        </div>
+    </div>
+
+    <div class="my-div">
+        <p>Content in my div</p>
+    </div>
+
+    
+</body>
+
+</html>
+<script>
+    $(document).ready(function () {
+        $('.slider').slick({
+            autoplay: true,
+            autoplaySpeed: 3000,
+            infinite: true
+        });
+    });
+
+</script>
