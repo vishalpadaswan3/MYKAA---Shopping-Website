@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Responsive UI</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav li {
+            margin: 0 10px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .hamburger-menu {
+            display: none;
+            cursor: pointer;
+        }
+
+        .bar {
+            width: 25px;
+            height: 3px;
+            background-color: #fff;
+            margin: 5px 0;
+        }
+
+        @media only screen and (max-width: 768px) {
+            nav ul {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 70px;
+                left: 0;
+                width: 100%;
+                background-color: #333;
+                color: #fff;
+            }
+
+            nav li {
+                margin: 10px 0;
+            }
+
+            .hamburger-menu {
+                display: block;
+            }
+
+            .container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .card {
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1>My Website</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="hamburger-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Welcome to my website!</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at mi turpis. Sed condimentum purus ut elit
+            ullamcorper fringilla. Suspendisse ut turpis nisl. Sed vitae ex at purus consectetur facilisis. Donec et
+            gravida nulla. Praesent vitae est eget sapien ultrices pulvinar. Fusce vehicula diam at elit tincidunt
+            malesuada. In vitae erat quis tellus hendrerit tempor. Suspendisse bibendum augue id mauris malesuada, nec
+            aliquet libero luctus. Duis sit amet dolor vel felis hendrerit vestibulum.</p>
+
+        <div class="container">
+            <div class="card">
+                <img src="https://via.placeholder.com/300x200" alt="Placeholder Image">
+                <h3>Card 1</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at mi turpis. Sed condimentum purus ut
+                    elit ullamcorper fringilla.</p>
+            </div>
+
+            <div class="card">
+                <img src="https://via.placeholder.com/300x200" alt="Placeholder Image">
+                <h3>Card 2</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at mi turpis. Sed condimentum purus ut
+                    elit ullamcorper fringilla.</p>
+            </div>
+
+            <div class="card">
+                <img src="https://via.placeholder.com/300x200" alt="Placeholder Image">
+                <h3>Card 3</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at mi turpis. Sed condimentum purus ut
+                    elit ullamcorper fringilla.</p>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="card">
+                <img src="https://via.placeholder.com/300x200" alt="Placeholder Image">
+                <h3>Card 4</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at mi turpis. Sed condimentum purus ut
+                    elit ullamcorper fringilla.</p>
+            </div>
+
+            <div class="card">
+                <img src="https://via.placeholder.com/300x200" alt="Placeholder Image">
+                <h3>

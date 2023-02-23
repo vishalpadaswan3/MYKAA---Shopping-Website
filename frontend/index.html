@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
+    <link rel="stylesheet" href="1.css">
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
     <link rel="stylesheet" type="text/css"
@@ -14,105 +14,846 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script type="text/javascript"
         src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
 </head>
-<style>
-    .slider {
-        width: 80%;
-        margin: 0 auto;
-    }
 
-    .slide {
-        background-color: #f2f2f2;
-        text-align: center;
-        height: 200px;
-        line-height: 200px;
-    }
-
-    .my-div {
-        background-color: #d9d9d9;
-        height: 100px;
-        width: 80%;
-        margin: 0 auto;
-        text-align: center;
-        line-height: 100px;
-    }
-
-    header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: #FC2779;
-  z-index: 100;
-}
-
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-}
-
-nav li {
-  margin: 0 1rem;
-}
-
-nav a {
-  display: block;
-  padding: 1rem;
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-nav a:hover {
-  background-color: hsl(0, 0%, 33%);
-}
-#imag-1 img{
-    height: 70px;
-}
-
-</style>
 
 <body>
 
     <header>
+        <img src="./img/3.png" alt="">
         <nav>
+            <img id="logoul" src="./img/logo2.png" alt="">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#">Categories</a></li>
+                <li><a href="#">Brands</a></li>
+                <li><a href="#">Luxe</a></li>
+                <li><a href="#">Mykaa_Fashion</a></li>
+                <li><a href="#">Beauty_Advice</a></li>
             </ul>
+            <div class="search-container">
+                <form action="">
+                    <input type="text" placeholder="Search.....">
+                </form>
+            </div>
+            <button id="signin">Sign In</button>
+            <img id="carthome" src="https://cdn-icons-png.flaticon.com/512/3737/3737372.png" alt="">
+            <p id="carthomeprice">1</p>
+
         </nav>
+
     </header>
-    <div class="slider">
-        <div class="slide"><img src="https://tse4.mm.bing.net/th?id=OIP.HM664gtdbHVkOXvWG4X3LAHaE7&pid=Api&P=0" alt="">
-        </div>
-        <div class="slide"><img src="https://tse3.explicit.bing.net/th?id=OIP.4d7Emr_d4fJnEE6zK7pj_wHaFK&pid=Api&P=0"
-                alt=""></div>
-        <div class="slide"><img src="https://tse3.mm.bing.net/th?id=OIP.Pvwf9JCK8RQBmFHGNbhZOAHaDj&pid=Api&P=0" alt="">
-        </div>
-        <div class="slide"><img src="https://tse2.mm.bing.net/th?id=OIP.gOesXEnkak-LlgqBE1R_tAHaEz&pid=Api&P=0" alt="">
+
+    <!-- ----------------------------------------------------------------------------Module part-------------------------------------------------------- -->
+    <div class="mainnav">
+        <div class="mininav">
+            <ul>
+                <li><a href="#">Makeup</a>
+                    <ul>
+                        <li><a href="#">Face</a></li>
+                        <li><a href="#">Eyes</a></li>
+                        <li><a href="#">Neclace</a></li>
+                        <li><a href="#">lips</a></li>
+                        <li><a href="#">Nails</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Skin</a>
+                    <ul>
+                        <li><a href="#">Moisturizer</a></li>
+                        <li><a href="#">Serum</a></li>
+                        <li><a href="#">Cleanser</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Hair</a>
+                    <ul>
+                        <li><a href="#">Shampoo</a></li>
+                        <li><a href="#">Conditioner</a></li>
+                        <li><a href="#">Hair Mask</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Appliances</a>
+                    <ul>
+                        <li><a href="#">Hair Dryer</a></li>
+                        <li><a href="#">Flat Iron</a></li>
+                        <li><a href="#">Curling Iron</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Bath & Body</a>
+                    <ul>
+                        <li><a href="#">Body Lotion</a></li>
+                        <li><a href="#">Body Wash</a></li>
+                        <li><a href="#">Bubble Bath</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Natural</a>
+                    <ul>
+                        <li><a href="#">Organic Makeup</a></li>
+                        <li><a href="#">Natural Skincare</a></li>
+                        <li><a href="#">Eco-Friendly Haircare</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Mom & Baby</a>
+                    <ul>
+                        <li><a href="#">Diapers</a></li>
+                        <li><a href="#">Baby Lotion</a></li>
+                        <li><a href="#">Nursing Pads</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Health & Wellness</a>
+                    <ul>
+                        <li><a href="#">Supplements</a></li>
+                        <li><a href="#">Essential Oils</a></li>
+                        <li><a href="#">Fitness Equipment</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Men</a>
+                    <ul>
+                        <li><a href="#">Shaving Cream</a></li>
+                        <li><a href="#">Beard Oil</a></li>
+                        <li><a href="#">Men's Skincare</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Fragrance</a>
+                    <ul>
+                        <li><a href="#">Perfume</a></li>
+                        <li><a href="#">Cologne</a></li>
+                        <li><a href="#">Body Mist</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Pop Ups</a>
+                    <ul>
+                        <li><a href="#">Limited Edition</a></li>
+                        <li><a href="#">Holiday Specials</a></li>
+                    </ul>
+            </ul>
         </div>
     </div>
 
-    <div class="my-div">
-        <p>Content in my div</p>
+    <!-- --------------------------------------------------------------------------------- Sliders part ---------------------------------------------- -->
+    <br><br>
+    <h1 id="bestbeauty2">BEST IN BEAUTY</h1>
+    <div class="slider-container">
+        <div class="slider">
+            <img src="https://images-static.nykaa.com/uploads/2e0920f5-01b2-4f90-94e6-dffffdb0f862.gif?tr=w-600,cm-pad_resize"
+                alt="">
+            <img src="https://images-static.nykaa.com/uploads/5d84f257-663d-4e03-9191-92dd6e53ea98.jpg?tr=w-600,cm-pad_resize"
+                alt="">
+            <img src="https://images-static.nykaa.com/uploads/0edd88f8-7241-42eb-ad2d-bd5642d0741a.jpg?tr=w-600,cm-pad_resize"
+                alt="">
+            <img src="https://images-static.nykaa.com/uploads/4241760e-88e7-49b3-9235-580789facdb7.jpg?tr=w-600,cm-pad_resize"
+                alt="">
+            <img src="https://images-static.nykaa.com/uploads/8523b59b-1695-4a5d-bbc5-2f918bac1b05.jpg?tr=w-600,cm-pad_resize"
+                alt="">
+            <img src="https://images-static.nykaa.com/uploads/ac086a5b-7bd2-46ed-a167-3746b11594f9.jpg?tr=w-600,cm-pad_resize"
+                alt="">
+            <img src="https://images-static.nykaa.com/uploads/872efc09-deed-4d54-81c4-bd1783e733ea.PNG?tr=w-600,cm-pad_resize"
+                alt="">
+            <img src="https://images-static.nykaa.com/uploads/2e0920f5-01b2-4f90-94e6-dffffdb0f862.gif?tr=w-600,cm-pad_resize"
+                alt="">
+        </div>
+        <button class="prev-button">&#8249;</button>
+        <button class="next-button">&#8250;</button>
+    </div>
+    <button id="availoffer">Avail offers</button>
+    <div class="bigimage">
+        <a href=""><img src="./img/img1.png" alt=""></a>
     </div>
 
-    
+
+    <div class="bigimage">
+        <h1 id="bestbeauty2">FIRST PURCHASE APP OFFERS</h1>
+        <a href=""><img src="./img/image2.png" alt=""></a>
+    </div>
+
+    <!-- -------------------------------------------------------------------------------------All brands----------------------------------------------------->
+    <h1 id="bestbeauty2">TOP BRANDS</h1>
+    <div class="substain">
+        <div class="substaindiv">
+            <img src="https://images-static.nykaa.com/uploads/b3f1a798-c21d-4b0a-a913-ac91fa85f5c0.jpg?tr=w-400,cm-pad_resize"
+                alt="">
+            <h4 class="subtitle">Flat 10% off on ₹1299+</h4>
+            <p class="subhead">Free Shampoo/Mask on ₹1599+</p>
+        </div>
+        <div class="substaindiv">
+            <img src="https://images-static.nykaa.com/uploads/5ba2775e-9534-400e-be69-87ee965c7036.jpg?tr=w-400,cm-pad_resize"
+                alt="">
+            <h4 class="subtitle">Approved by dermatologists</h4>
+            <p class="subhead">Free hair mask on scalp range on ₹999+</p>
+        </div>
+        <div class="substaindiv">
+            <img src="https://images-static.nykaa.com/uploads/88a53a6c-fde1-4365-be72-bbe368c9d021.jpg?tr=w-400,cm-pad_resize"
+                alt="">
+            <h4 class="subtitle">Up To 35% Off</h4>
+            <p class="subhead">72HR Hydrated Hair with Hyaluronic Acid</p>
+        </div>
+        <div class="substaindiv">
+            <img src="https://images-static.nykaa.com/uploads/6842d103-a2d2-404e-bb2e-376cf0215acd.jpg?tr=w-400,cm-pad_resize"
+                alt="">
+            <h4 class="subtitle">Up To 30% Off</h4>
+            <p class="subhead">Ace your base like never before!</p>
+        </div>
+        <div class="substaindiv">
+            <img src="https://images-static.nykaa.com/uploads/9ed396c7-44cf-45fc-8122-012428aa2641.gif?tr=w-400,cm-pad_resize"
+                alt="">
+            <h4 class="subtitle">Up To 25% Off</h4>
+            <p class="subhead">Hair Oils & Masks</p>
+        </div>
+        <div class="substaindiv">
+            <img src="https://images-static.nykaa.com/uploads/05ac3534-f3b1-43d1-94b6-ce30eace1125.jpg?tr=w-400,cm-pad_resize"
+                alt="">
+            <h4 class="subtitle">Up To 15% Off</h4>
+            <p class="subhead">#1 Dermatologist Recommended Brand in India</p>
+        </div>
+        <div class="substaindiv">
+            <img src="https://images-static.nykaa.com/uploads/454bfa5e-1d61-43b3-a7bb-38323199cef0.jpg?tr=w-400,cm-pad_resize"
+                alt="">
+            <h4 class="subtitle">Up To 10% Off</h4>
+            <p class="subhead">Skincare Kit Worth ₹5000 + Pouch On ₹4000</p>
+        </div>
+        <div class="substaindiv">
+            <img src="https://images-static.nykaa.com/uploads/a06b72a8-bd09-408f-95b8-8d3f01f13cbf.jpg?tr=w-400,cm-pad_resize"
+                alt="">
+            <h4 class="subtitle">Luxe Sunscreens starting at ₹950</h4>
+            <p class="subhead"> + Exciting Gifts on purchase!</p>
+        </div>
+        <div class="substaindiv">
+            <img src="https://images-static.nykaa.com/uploads/8440b977-a365-4a3e-a5f9-b4c8df2e936c.jpg?tr=w-400,cm-pad_resize"
+                alt="">
+            <h4 class="subtitle">Complete Your Party Look In Minutes</h4>
+            <p class="subhead">With Huda Beauty's Lovefest Collection</p>
+        </div>
+
+    </div>
+    <div class="promotional">
+        <img src="./img/image3.png" alt="">
+    </div>
+
+    <!-- -----------------------------------------------------------------Another promotional part----------------------------------------------------- -->
+    <h1 id="bestbeauty2">ONLY AT MYKAA</h1>
+    <div class="mainanotherone">
+        <div class="substain">
+            <div class="substaindiv">
+                <img src="https://images-static.nykaa.com/creatives/590843c6-57b4-476f-8714-001d2ada4c9f/default.jpg?tr=w-400,cm-pad_resize"
+                    alt="">
+                <p class="subtitle1">2 Bestseller Minis On ₹1400</p>
+                <p class="subhead1">Bodycare SOLmates to love</p>
+            </div>
+            <div class="substaindiv">
+                <img src="https://images-static.nykaa.com/creatives/0a7576c8-7a24-4888-b699-6c37cfcd21b5/default.png?tr=w-400,cm-pad_resize"
+                    alt="">
+                <p class="subtitle1">Up To 20% Off</p>
+                <p class="subhead1">#GetThatGlow</p>
+            </div>
+            <div class="substaindiv">
+                <img src="https://images-static.nykaa.com/creatives/66597555-3ef3-4654-80e1-b1442b8e2793/default.jpeg?tr=w-400,cm-pad_resize"
+                    alt="">
+                <p class="subtitle1">Up To 20% Off</p>
+                <p class="subhead1">Free Facewash On ₹699</p>
+            </div>
+        </div>
+
+        <div class="anotherone">
+            <div class="anodiv">
+                <img src="https://images-static.nykaa.com/creatives/3aafc401-d29b-418d-92e7-a4458771edba/default.jpg?tr=w-400,cm-pad_resize"
+                    alt="">
+                <p class="subtitle1">On ₹5000: Mini Matte Lipstick +</p>
+                <p class="subhead1">On ₹6000: Mini Elixir Serum</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------------------------------------------------------------------products part----------------------------------------------------------- -->
+    <h1 id="bestbeauty2">NEW AT MYKAA</h1>
+    <div class="productsHome">
+        <div class="itemHome">
+            <p class="samhome">NEW !!</p>
+            <img src="https://images-static.nykaa.com/media/catalog/product/2/b/2b250a0NYVED00000011d_1.jpg?tr=w-344,h-344,cm-pad_resize"
+                alt="">
+            <p>★★★★☆</p>
+            <p class="parahome">Nyveda Revive My Roots Hair Growth Treatment Oil</p>
+            <p class="quanhome">100ml</p>
+            <p class="pricehome">₹ 949</p>
+            <button class="home-btn">BUY</button>
+        </div>
+        <div class="itemHome">
+            <p class="samhome">NEW !!</p>
+            <img src="https://images-static.nykaa.com/media/catalog/product/6/5/65f810c3614270280757_1.jpg" alt="">
+            <p>★★★★☆</p>
+            <p class="parahome">Lancome Advanced Genifique Youth Activating</p>
+            <p class="quanhome">20ml</p>
+            <p class="pricehome">₹ 1100</p>
+            <button class="home-btn">BUY</button>
+        </div>
+        <div class="itemHome">
+            <p class="samhome1">OFFER !!</p>
+            <img src="https://images-static.nykaa.com/media/catalog/product/d/b/dbaa1ea800897225384_1.jpg" alt="">
+            <p>★★★★★</p>
+            <p class="parahome">NYX Professional Makeup Ultimate Glow Shots</p>
+            <p class="quanhome">7.5ml</p>
+            <p class="pricehome">₹ 563</p>
+            <button class="home-btn">BUY</button>
+        </div>
+        <div class="itemHome">
+            <p class="samhome">NEW !!</p>
+            <img src="https://images-static.nykaa.com/media/catalog/product/2/6/2674ad1NYKAC00001146_1.jpg" alt="">
+            <p>★★★★☆</p>
+            <p class="parahome">Nykaa Matte Tattoo Liquid Lipstick - Rose</p>
+            <p class="quanhome">4 g</p>
+            <p class="pricehome">₹ 350</p>
+            <button class="home-btn">BUY</button>
+        </div>
+        <div class="itemHome">
+            <p class="samhome">NEW !!</p>
+            <img src="https://images-static.nykaa.com/media/catalog/product/f/8/f8eb1fbDOTKE00000118-1.jpg" alt="">
+            <p>★★★☆☆</p>
+            <p class="parahome">Dot & Key Moringa, Argan & Keratin Hairfall Control</p>
+            <p class="quanhome">350ml</p>
+            <p class="pricehome">₹ 1100</p>
+            <button class="home-btn">BUY</button>
+        </div>
+        <div class="itemHome">
+            <p class="samhome1">OFFER !!</p>
+            <img src="https://images-static.nykaa.com/media/catalog/product/5/2/52cfb80LORAA00000050_1.jpg?tr=w-344,h-344,cm-pad_resize"
+                alt="">
+            <p>★★★★★</p>
+            <p class="parahome">L'Oreal Professionnel Scalp Advanced Anti</p>
+            <p class="quanhome">2 pc's</p>
+            <p class="pricehome">₹ 600</p>
+            <button class="home-btn">BUY</button>
+        </div>
+    </div>
+
+    <!-- ------------------------------------------------------------------------Discover Our Favourites------------------------------------------------ -->
+
+    <h1 id="bestbeauty2">DISCOVER AND FEATURED</h1>
+    <div class="discoverhome">
+        <img src="./img/image4.png" alt="">
+    </div>
+    <div class="morecards">
+        <div class="cardshash">
+            <img src="https://images-static.nykaa.com/uploads/207d5407-b589-4aeb-b5f3-54a9143ed8f5.jpg?tr=w-240,cm-pad_resize"
+                alt=""><br>
+            <button class="locus">luxe Minis</button>
+        </div><br>
+
+        <div class="cardshash">
+            <img src="https://images-static.nykaa.com/uploads/86a11d9e-818b-48e4-9435-cb886f4e3762.jpg?tr=w-240,cm-pad_resize"
+                alt=""><br>
+            <button class="locus">Lipstick's</button>
+        </div><br>
+
+
+        <div class="cardshash">
+            <img src="https://images-static.nykaa.com/uploads/c225c3e8-57c4-4e77-9162-c58426b81381.jpg?tr=w-240,cm-pad_resize"
+                alt=""><br>
+            <button class="locus">Blushes</button>
+        </div><br>
+
+        <div class="cardshash">
+            <img src="https://images-static.nykaa.com/uploads/ccc99a7a-3aec-4a7b-8e40-57ab39e4097e.jpg?tr=w-240,cm-pad_resize"
+                alt=""><br>
+            <button class="locus">Eyeshadow's</button>
+        </div><br>
+
+        <div class="cardshash">
+            <img src="https://images-static.nykaa.com/uploads/4ea35342-cbb3-44ef-a556-9f1c0f749d93.jpg?tr=w-240,cm-pad_resize"
+                alt=""><br>
+            <a href=""><button class="locus">Foundation's</button></a>
+        </div><br>
+    </div><br><br>
+
+
+    <!-- -----------------------------------------------------------------------------Popular picks--------------------------------------------------------- -->
+
+    <h1 id="bestbeauty2">PUPULAR PICKS</h1>
+    <div class="popularbest">
+        <a href=""><img src="./img/image5.png" alt=""></a>
+    </div><br><br>
+
+    <div class="productsHome">
+        <div class="itemHome">
+            <p class="samhome2">Bestseller !!</p>
+            <img src="https://images-static.nykaa.com/media/catalog/product/4/b/4be13ef8904245711023_1.jpg" alt="">
+            <p>★★★★☆</p>
+            <p class="parahome">Nyveda Revive My Roots Hair Growth Treatment Oil</p>
+            <p class="quanhome">100ml</p>
+            <p class="pricehome">₹ 949</p>
+            <button class="home-btn">BUY</button>
+        </div>
+        <div class="itemHome">
+            <p class="samhome2">Bestseller !!</p>
+            <img src="https://images-static.nykaa.com/media/catalog/product/0/f/0f0e4e88904330901926_1.jpg" alt="">
+            <p>★★★★☆</p>
+            <p class="parahome">Lancome Advanced Genifique Youth Activating</p>
+            <p class="quanhome">20ml</p>
+            <p class="pricehome">₹ 1100</p>
+            <button class="home-btn">BUY</button>
+        </div>
+        <div class="itemHome">
+            <p class="samhome2">Bestseller !!</p>
+            <img src="https://images-static.nykaa.com/media/catalog/product/c/0/c0ad176N_3401395376706_1.jpg" alt="">
+            <p>★★★★★</p>
+            <p class="parahome">NYX Professional Makeup Ultimate Glow Shots</p>
+            <p class="quanhome">7.5ml</p>
+            <p class="pricehome">₹ 563</p>
+            <button class="home-btn">BUY</button>
+        </div>
+        <div class="itemHome">
+            <p class="samhome2">Bestseller !!</p>
+            <img src="https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/c/9/c91a0a0NYVED00000013d_1.jpg"
+                alt="">
+            <p>★★★★☆</p>
+            <p class="parahome">Nykaa Matte Tattoo Liquid Lipstick - Rose</p>
+            <p class="quanhome">4 g</p>
+            <p class="pricehome">₹ 350</p>
+            <button class="home-btn">BUY</button>
+        </div>
+        <div class="itemHome">
+            <p class="samhome2">Bestseller !!</p>
+            <img src="https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/1/0/1038c2aNYKAB00000496_1.jpg"
+                alt="">
+            <p>★★★☆☆</p>
+            <p class="parahome">Dot & Key Moringa, Argan & Keratin Hairfall Control</p>
+            <p class="quanhome">350ml</p>
+            <p class="pricehome">₹ 1100</p>
+            <button class="home-btn">BUY</button>
+        </div>
+        <div class="itemHome">
+            <p class="samhome2">Bestseller !!</p>
+            <img src="https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/f/1/f12206fMCAFF00000193_1.jpg"
+                alt="">
+            <p>★★★★★</p>
+            <p class="parahome">L'Oreal Professionnel Scalp Advanced Anti</p>
+            <p class="quanhome">2 pc's</p>
+            <p class="pricehome">₹ 600</p>
+            <button class="home-btn">BUY</button>
+        </div>
+    </div>
+
+    <!-- -------------------------------------------------Featured Brands---------------------------------------------------------------------------------- -->
+
+    <h1 id="bestbeauty2">FEATURED BRANDS</h1>
+    <div class="featuredhome">
+        <div class="featuredhomediv">
+            <img src="https://images-static.nykaa.com/creatives/fa2c3c38-9b10-4a08-ba5f-cfde73c46be4/default.png?tr=w-240,cm-pad_resize"
+                alt="">
+            <h3>Flat 35% Off</h3>
+            <p class="parafeatured">On Entire Range</p>
+        </div>
+        <div class="featuredhomediv">
+            <img src="https://images-static.nykaa.com/creatives/a4439a9a-3f4c-466d-b41f-936dca68d5b2/default.png?tr=w-240,cm-pad_resize"
+                alt="">
+            <h3>Flat 20% Off</h3>
+            <p class="parafeatured">Free Scrub on ₹699</p>
+        </div>
+        <div class="featuredhomediv">
+            <img src="https://images-static.nykaa.com/creatives/cbe74a23-15a3-44ce-9062-21ea64747990/default.jpg?tr=w-240,cm-pad_resize"
+                alt="">
+            <h3>Hair Profector</h3>
+            <p class="parafeatured">Reverses Hair Damage</p>
+        </div>
+        <div class="featuredhomediv">
+            <img src="https://images-static.nykaa.com/creatives/2168a069-1271-4123-bd8d-879f696dff60/default.jpg?tr=w-240,cm-pad_resize"
+                alt="">
+            <h3>Flat 10% Off</h3>
+            <p class="parafeatured">On Entire Range</p>
+        </div>
+        <div class="featuredhomediv">
+            <img src="https://images-static.nykaa.com/creatives/3d014b89-d850-41f6-8999-2ca0a7758214/default.jpg?tr=w-240,cm-pad_resize"
+                alt="">
+            <h3>Buy 1 @ 5% Off</h3>
+            <p class="parafeatured">Buy 2, Get Flat 12%</p>
+        </div>
+    </div>
+    <br><br>
+    <div class="featuredhome2">
+        <div class="featuredhomediv2">
+            <img src="https://images-static.nykaa.com/creatives/7665aa19-e8cf-4b7e-81fe-948377539e14/default.jpg?tr=w-240,cm-pad_resize"
+                alt="">
+            <h3>Flat 20% Off</h3>
+            <p class="parafeatured">On Entire Range</p>
+        </div>
+        <div class="featuredhomediv2">
+            <img src="https://images-static.nykaa.com/creatives/626dee77-f0de-4ea1-94f0-9b5bde33f977/default.jpg?tr=w-240,cm-pad_resize"
+                alt="">
+            <h3>Flat 27% Off</h3>
+            <p class="parafeatured">On Correl</p>
+        </div>
+        <div class="featuredhomediv2">
+            <img src="https://images-static.nykaa.com/creatives/de9fd13c-72b0-4728-846c-fcd70df8e602/default.jpg?tr=w-240,cm-pad_resize"
+                alt="">
+            <h3>On 20% Off</h3>
+            <p class="parafeatured">Bestseller Products</p>
+        </div>
+        <div class="featuredhomediv2">
+            <img src="https://images-static.nykaa.com/creatives/fb25aee3-8b4a-4f36-abc0-845590245aac/default.jpg?tr=w-240,cm-pad_resize"
+                alt="">
+            <h3>On ₹900</h3>
+            <p class="parafeatured">Cleanser Worth ₹595</p>
+        </div>
+    </div>
+    <br><br>
+
+    <!-- --------------------------------------------------------------just three divs----------------------------------------------------------------------- -->
+
+    <div class="threedivhome">
+        <div class="onedivhome">
+            <a href=""><img
+                    src="https://images-static.nykaa.com/creatives/7e0ffafd-078a-475d-8858-096e0f77d5be/default.jpg?tr=w-400,cm-pad_resize"
+                    alt=""></a>
+            <h3 class="oned3">Upto 50% off</h3>
+            <p class="onedp">Best Selling Gummies</p>
+        </div>
+        <div class="onedivhome">
+            <a href=""><img
+                    src="https://images-static.nykaa.com/creatives/af1b06cc-58b4-4a2d-a1f2-511922d6a0e1/default.jpg?tr=w-400,cm-pad_resize"
+                    alt=""></a>
+            <h3 class="oned3">Upto 30% off</h3>
+            <p class="onedp">Extra 10% off on 999+</p>
+        </div>
+        <div class="onedivhome">
+            <a href=""><img
+                    src="https://images-static.nykaa.com/creatives/ebec5845-c7cf-48b9-abb6-dff65c3e8ce7/default.jpg?tr=w-400,cm-pad_resize"
+                    alt=""></a>
+            <h3 class="oned3">Flat 10% Off +</h3>
+            <p class="onedp">Scalp Exfoliator On ₹1200 !!</p>
+        </div>
+    </div>
+    <br><br>
+
+    <h1 id="bestbeauty2">CATEGORIES IN FOCUS</h1>
+    <div class="popularbest">
+        <a href=""><img src="./img/image6.png" alt=""></a>
+    </div>
+
+
+
+    <!-- /* --------------------------------------------------------------------------brands you cant miss------------------------------------------------ */ -->
+
+    <h1 id="bestbeauty2">Brands You Can's Miss</h1>
+    <h3 class="luxe">LUXE</h3>
+    <hr><br>
+    <div class="misshome">
+        <a href="">
+            <div class="cantmiss">
+                <img src="https://images-static.nykaa.com/creatives/56cebce4-8c7d-40d3-829c-ee6bf52dec54/default.jpg?tr=w-240,cm-pad_resize"
+                    alt="">
+                <h3>Exciting Gifts</h3>
+                <p class="cantpara">On ₹1500 & Above</p>
+            </div>
+        </a>
+        <a href="">
+            <div class="cantmiss">
+                <img src="https://images-static.nykaa.com/creatives/757ec8d3-8b9e-43a6-81d6-455bf08a78c9/default.jpg?tr=w-240,cm-pad_resize"
+                    alt="">
+                <h3>10% Off</h3>
+                <p class="cantpara">On Bestsellers</p>
+            </div>
+        </a>
+        <a href="">
+            <div class="cantmiss">
+                <img src="https://images-static.nykaa.com/creatives/1a478b49-27af-41fe-921f-04d74a5590ff/default.jpg?tr=w-240,cm-pad_resize"
+                    alt="">
+                <h3>Beautiful Tools</h3>
+                <p class="cantpara">For a Perfect Finish</p>
+            </div>
+        </a>
+        <a href="">
+            <div class="cantmiss">
+                <img src="https://images-static.nykaa.com/creatives/d5b4c63f-c668-4e7f-917b-098c77f97a4f/default.jpg?tr=w-240,cm-pad_resize"
+                    alt="">
+                <h3>Iconic Makeup</h3>
+                <p class="cantpara">By Parth Mycrth</p>
+            </div>
+        </a>
+        <a href="">
+            <div class="cantmiss">
+                <img src="https://images-static.nykaa.com/creatives/c4101d53-3c2d-4906-9972-e90d8351de2d/default.jpg?tr=w-240,cm-pad_resize"
+                    alt="">
+                <h3>On ₹4500:</h3>
+                <p class="cantpara">Mini Bodywash+Gift!</p>
+            </div>
+        </a>
+    </div>
+
+    <h3 class="luxe">MAKEUP</h3>
+    <hr><br>
+    <div class="misshome">
+        <a href="">
+            <div class="cantmiss">
+                <img src="https://images-static.nykaa.com/creatives/dee609ee-0047-41fb-8947-363a657830d0/default.jpg?tr=w-240,cm-pad_resize"
+                    alt="">
+                <h3>Exciting Gifts</h3>
+                <p class="cantpara">On ₹1500 & Above</p>
+            </div>
+        </a>
+        <a href="">
+            <div class="cantmiss">
+                <img src="https://images-static.nykaa.com/creatives/151115e0-cffc-47af-906e-5bf1e704ab96/default.jpg?tr=w-240,cm-pad_resize"
+                    alt="">
+                <h3>10% Off</h3>
+                <p class="cantpara">On Bestsellers</p>
+            </div>
+        </a>
+        <a href="">
+            <div class="cantmiss">
+                <img src="https://images-static.nykaa.com/creatives/130105e4-7efe-42ad-a91a-7c3e9b09a212/default.jpg?tr=w-240,cm-pad_resize"
+                    alt="">
+                <h3>Beautiful Tools</h3>
+                <p class="cantpara">For a Perfect Finish</p>
+            </div>
+        </a>
+        <a href="">
+            <div class="cantmiss">
+                <img src="https://images-static.nykaa.com/creatives/78102e06-bca7-44d6-8920-ee8731f9a30c/default.jpg?tr=w-240,cm-pad_resize"
+                    alt="">
+                <h3>Iconic Makeup</h3>
+                <p class="cantpara">By Parth Mycrth</p>
+            </div>
+        </a>
+        <a href="">
+            <div class="cantmiss">
+                <img src="https://images-static.nykaa.com/creatives/61e51406-7eb0-4863-989d-3c7a33d578df/default.jpg?tr=w-240,cm-pad_resize"
+                    alt="">
+                <h3>On ₹4500:</h3>
+                <p class="cantpara">Mini Bodywash+Gift!</p>
+            </div>
+        </a>
+    </div>
+
+    <!-- -------------------------------------------Editors's choice--------------------------------------------------------------------------- -->
+
+    <br>
+    <h1 id="bestbeauty2">EDITOR'S CHOICE</h1>
+    <div class="editorshome">
+        <div class="choicehome">
+            <img src="https://images-static.nykaa.com/uploads/9b9035e2-8da6-4f78-bcda-1e4e0fb5a5d7.jpg?tr=w-240,cm-pad_resize"
+                alt="">
+            <h3 class="travelhome">Travel Essentials</h3>
+        </div>
+        <div class="choicehome">
+            <img src="https://images-static.nykaa.com/uploads/d342f8f1-1c35-4dd1-a2e6-f130b9c54f75.jpg?tr=w-240,cm-pad_resize"
+                alt="">
+            <h3 class="Beauty Resolution's 2023">Travel Essentials</h3>
+        </div>
+        <div class="choicehome">
+            <img src="https://images-static.nykaa.com/uploads/c2d26c0f-62f2-4d8a-a872-1f70b272c6a1.jpg?tr=w-240,cm-pad_resize"
+                alt="">
+            <h3 class="travelhome">Party-Ready Makeup</h3>
+        </div>
+        <div class="choicehome">
+            <img src="https://images-static.nykaa.com/uploads/70b3e6af-3471-4946-80d2-02ccf8d3aa61.jpg?tr=w-240,cm-pad_resize"
+                alt="">
+            <h3 class="travelhome">Super Serum Squad</h3>
+        </div>
+        <div class="choicehome">
+            <img src="https://images-static.nykaa.com/uploads/4dc2cb96-6690-4539-adb1-11dde2327b07.jpg?tr=w-240,cm-pad_resize"
+                alt="">
+            <h3 class="travelhome">Relaxing Shower Routine</h3>
+        </div>
+    </div><br><br>
+    <!-- -----------------------------------------------Pop Up stores---------------------------------------------------------------------------------- -->
+    <h1 id="bestbeauty2">POP-UP STORES</h1>
+    <div class="popuphome">
+        <a href=""><img src="./img/image7.png" alt=""></a>
+    </div>
+    <br>
+
+
+    <!-- ---------------------------------------------------Extra products wear part------------------------------------------------------------------- -->
+
+    <h1 id="bestbeauty2">FEATURED BRANDS</h1>
+    <div class="featuredhome">
+        <div class="featuredhomediv">
+            <img src="https://images-static.nykaa.com/uploads/a62c4643-2e24-4d0e-af63-b8434f12b8e9.jpg?tr=w-200,cm-pad_resize"
+                alt="">
+            <h3>Indianwear</h3>
+            <p class="parafeatured">Upto 70% Off</p>
+        </div>
+        <div class="featuredhomediv">
+            <img src="https://images-static.nykaa.com/uploads/223a41db-cd2e-47de-8f97-8a3aa3cbb09c.jpg?tr=w-200,cm-pad_resize"
+                alt="">
+            <h3>Sportswear</h3>
+            <p class="parafeatured">Upto 60% Off</p>
+        </div>
+        <div class="featuredhomediv">
+            <img src="https://images-static.nykaa.com/uploads/e60a0d32-4bb3-4a68-9e43-b496e502b1d5.jpg?tr=w-200,cm-pad_resize"
+                alt="">
+            <h3>Homer</h3>
+            <p class="parafeatured">Upto 70% off</p>
+        </div>
+        <div class="featuredhomediv">
+            <img src="https://images-static.nykaa.com/uploads/42f0d9bd-ce41-42db-9659-d290818eba7a.jpg?tr=w-200,cm-pad_resize"
+                alt="">
+            <h3>Jewellery</h3>
+            <p class="parafeatured">Upto 70% Off</p>
+        </div>
+        <div class="featuredhomediv">
+            <img src="https://images-static.nykaa.com/uploads/5bd2c899-50e1-4214-baee-b6bda9dfe942.jpg?tr=w-200,cm-pad_resize"
+                alt="">
+            <h3>Sunglasses</h3>
+            <p class="parafeatured">Upto 70% Off</p>
+        </div>
+    </div>
+    <br><br>
+
+
+    <h1 id="bestbeauty2">BEAUTY ADVICE</h1>
+    <div class="popuphome">
+        <a href=""><img src="./img/image8.png" alt=""></a>
+    </div>
+    <br><br>
+
+
+    <div class="footer">
+        <div class="footerinside">
+            <div class="footermykaa">
+                <ul class="mykaafoot">
+                    <i>
+                        <h1 id="swag">MyKaa</h1>
+                    </i>
+                    <a href="">
+                        <li>Who are we ?</li>
+                    </a>
+                    <a href="">
+                        <li>Careers</li>
+                    </a>
+                    <a href="">
+                        <li>Authenticity</li>
+                    </a>
+                    <a href="">
+                        <li>Press</li>
+                    </a>
+                    <a href="">
+                        <li>Testimonials</li>
+                    </a>
+                    <a href="">
+                        <li>Mykaa CSR</li>
+                    </a>
+                    <a href="">
+                        <li>Responsible Disclosure</li>
+                    </a>
+                    <a href="">
+                        <li>Investor Relations</li>
+                    </a>
+                </ul>
+            </div>
+
+            <div class="footermykaa">
+                <ul class="mykaafoot">
+                    <a href="">
+                        <h3>Help</h3>
+                    </a>
+                    <a href="">
+                        <li>Contact Us</li>
+                    </a>
+                    <a href="">
+                        <li>Frequently asked questions</li>
+                    </a>
+                    <a href="">
+                        <li>Store Locator</li>
+                    </a>
+                    <a href="">
+                        <li>Cancellation & Return</li>
+                    </a>
+                    <a href="">
+                        <li>Shipping & Delivery</li>
+                    </a>
+                    <a href="">
+                        <li>Sell on MyKaa</li>
+                    </a>
+                </ul>
+            </div>
+
+            <div class="footermykaa">
+                <ul class="mykaafoot">
+                    <a href="">
+                        <h3>Inspire Me</h3>
+                    </a>
+                    <a href="">
+                        <li>Beauty Book</li>
+                    </a>
+                    <a href="">
+                        <li>Nykaa TV</li>
+                    </a>
+                    <a href="">
+                        <li>Nykaa Network</li>
+                    </a>
+                    <a href="">
+                        <li>Buying Guides</li>
+                    </a>
+                </ul>
+            </div>
+
+            <div class="footermykaa">
+                <ul class="mykaafoot">
+                    <a href="">
+                        <h3>Quick Links</h3>
+                    </a>
+                    <a href="">
+                        <li>Offer zone</li>
+                    </a>
+                    <a href="">
+                        <li>New Launches</li>
+                    </a>
+                    <a href="">
+                        <li>Nykaa Man</li>
+                    </a>
+                    <a href="">
+                        <li>Nykaa Fashion</li>
+                    </a>
+                    <a href="">
+                        <li>Nykaa Pro</li>
+                    </a>
+                </ul>
+            </div>
+
+            <div class="footermykaa">
+                <ul class="mykaafoot">
+                    <a href="">
+                        <h3>Top Categories</h3>
+                    </a>
+                    <a href="">
+                        <li>Makeup</li>
+                    </a>
+                    <a href="">
+                        <li>Skin</li>
+                    </a>
+                    <a href="">
+                        <li>Hair</li>
+                    </a>
+                    <a href="">
+                        <li>Bath & Body</li>
+                    </a>
+                    <a href="">
+                        <li>Appliances</li>
+                    </a>
+                    <a href="">
+                        <li>Mom and Baby</li>
+                    </a>
+                    <a href="">
+                        <li>Wellness</li>
+                    </a>
+                    <a href="">
+                        <li>Fragrance</li>
+                    </a>
+                    <a href="">
+                        <li>Natural</li>
+                    </a>
+                    <a href="">
+                        <li>Luxe</li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="lastonehome">
+        <a href="https://twitter.com/MyNykaa"><img src="./img/image9.png" alt=""></a>
+    </div>
 </body>
 
 </html>
-<script>
-    $(document).ready(function () {
-        $('.slider').slick({
-            autoplay: true,
-            autoplaySpeed: 3000,
-            infinite: true
-        });
-    });
-
-</script>
+<script src="./index.js"></script>
