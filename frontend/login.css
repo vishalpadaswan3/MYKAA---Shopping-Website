@@ -200,6 +200,11 @@ nav a:hover {
 #message {
     display: none;
     color: #FC2779;
+    text-align: center;
+}
+#tokenlogin {
+    font-weight: 700;
+    color: black;
 }
 
 @media screen and (min-width: 400px) and (max-width: 900px) {
