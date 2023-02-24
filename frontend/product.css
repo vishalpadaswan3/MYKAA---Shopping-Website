@@ -1,0 +1,44 @@
+header {
+    height: 200px;
+    border: 2px solid black;
+}
+.allproducts {
+    text-align: center;
+    font-size: 26px;
+    margin-top: 230px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.productbigdiv {
+    width: 95%;
+    margin: auto;
+    border: 2px solid black;
+    height: 1000px;
+    display: flex;
+}
+.leftsidepr {
+    width: 30%;
+    margin: auto;
+    height: 1000px;
+    border: 2px solid rgb(0, 0, 0);
+    padding: 20px;
+    position: sticky;
+}
+#rightsidepr {
+    width: 60%;
+    margin: auto;
+    height: 1000px;
+    padding: 20px;
+    border: 2px solid red;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px
+    ;
+}
+.appendpr {
+    border: 2px solid rgb(255, 217, 0);
+    padding: 10px;
+}
+.appendpr img{
+    width: 200px;
+}
