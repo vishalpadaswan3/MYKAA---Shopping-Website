@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="product.css">
     <link rel="stylesheet" href="1.css">
+    <link rel="stylesheet" href="./cart.css">
     <title>Document</title>
+
 </head>
 
 <body>
@@ -27,7 +28,7 @@
                     <input type="text" placeholder="Search.....">
                 </form>
             </div>
-            <button id="signin">Hi Vishal !</button>
+            <button id="signin">Hi Vishal</button>
             <img id="carthome" src="https://cdn-icons-png.flaticon.com/512/3737/3737372.png" alt="">
             <p id="carthomeprice"></p>
 
@@ -117,104 +118,64 @@
             </ul>
         </div>
     </div>
-
-    <h1 class="allproducts">ALL PRODUCTS <span id="totalprs"></span></h1>
-    <div class="productbigdiv">
-        <div class="leftsidepr">
-            <div class="topselect">
-                <label id="labelsort" for="">Sort By :</label>
-                <select name="" id="popuselect">
-                    <option class="optionsort" value="Popularity">Popularity</option>
-                    <option class="optionsort" value="Discount">Discount</option>
-                    <option class="optionsort" value="Name">Name</option>
-                    <option class="optionsort" value="CustomerTopRated">Customer Top Rated</option>
-                    <option class="optionsort" value="Hightolow">Price : High to Low</option>
-                    <option class="optionsort" value="Lowtohigh">Price : Low to High</option>
-                </select>
+    <div class="cartpagemain">
+        <div id="appendcartitem">
+            
+            
+        </div>
+        <div class="appendtotalall">
+            <h1 id="appendcartitemhead">Total item : 3</h1>
+            <div class="totalcartcart">
+                <div>
+                    Total Price
+                </div>
+                <div>
+                    <p id="vpvp44">₹9500</p>
+                </div>
             </div>
-            <br><br>
-            <div class="makeuppr">
-
-                <button id="filterBtn3">GENDER</button>
-                <div id="optionsSelect3">
-                    <P id="female">FEMALE</P>
-                    <P id="male">MALE</P>
-                    <P id="unisex">UNISEX</P>
-                    <P id="closevppr3"> ❌</P>
+            <div class="totalcartcart">
+                <div>
+                    Sub - Total :
                 </div>
-
-                <br><br><br>
-
-                <button id="filterBtn">MAKEUP</button>
-                <div id="optionsSelect">
-                    <P id="face">FACE</P>
-                    <P id="eyes">EYES</P>
-                    <P id="nacklace">NECKLACE</P>
-                    <P id="lips">LIPS</P>
-                    <P id="nails">NAILS</P>
-                    <P id="closevppr"> ❌</P>
+                <div>
+                    <p id="vpvp33">₹1000</p>
                 </div>
-
-
-                <br><br><br>
-
-
-                <button id="filterBtn2">SKIN</button>
-                <div id="optionsSelect2">
-                    <P id="moisturizers">MOISTURIZERS</P>
-                    <P id="cleaners">CLEANERS</P>
-                    <P id="maks">MASKS</P>
-                    <P id="bodycare">BODY CARE</P>
-                    <P id="closevppr2"> ❌</P>
-                </div>
-
-                <br><br><br>
-
-
-                <button id="filterBtn4">HAIR</button>
-                <div id="optionsSelect4">
-                    <P id="haircare">HAIRCARE</P>
-                    <P id="tools">TOOLS AND AC</P>
-                    <P id="styles">STYLES</P>
-                    <P id="closevppr4"> ❌</P>
-                </div>
-
-                <br><br><br>
-
-
-                <button id="filterBtn5">COLOUR</button>
-                <div id="optionsSelect5">
-                    <P id="pink">PINK</P>
-                    <P id="brown">BROWN</P>
-                    <P id="red">RED</P>
-                    <P id="voilet">VOILET</P>
-                    <P id="white">WHITE</P>
-                    <P id="blue">BLUE</P>
-                    <P id="silver">SILVER</P>
-                    <P id="closevppr5"> ❌</P>
-                </div>
-
-                <br><br><br>
-
-
-                <button id="filterBtn6">PACKSIZE</button>
-                <div id="optionsSelect6">
-                    <P id="single">SINGLE</P>
-                    <P id="multipacks">MULTIPACKS</P>
-                    <P id="packs">PACKS</P>
-                    <P id="closevppr6"> ❌</P>
-                </div>
-
             </div>
 
-        </div>
-        <div id="rightsidepr">
-           
+            <div class="totalcartcart">
+                <div>
+                    Shipping - Charges :
+                </div>
+                <div>
+                    <p id="vpvp22">₹500</p>
+                </div>
+            </div>
 
+            
+
+            <div class="totalcartcart">
+                <div>
+                    TAX
+                </div>
+                <div class="">
+                    <p id="vpvp11">₹560</p>
+                </div>
+            </div>
+
+            <div class="totalcartcart">
+                <div>
+                    Coupon_Code 
+                </div>
+                <div class="saminputcart">
+                    <input id="samsamsam" type="text">
+                </div>
+            </div>
+
+            <button id="checkoutpara">Proceed to Checkout</button>
         </div>
+
     </div>
 </body>
 
 </html>
-<script src="./product.js"></script>
-<script src="./pro.js"></script>
+<script src="./cart.js"></script>

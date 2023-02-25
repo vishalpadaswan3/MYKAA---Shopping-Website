@@ -1,72 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<html>
+  <head>
+    <title>Add to Cart Example</title>
     <style>
-        /* Style the dropdown button */
-        .dropdown-btn {
-            background-color: #fff;
-            color: #000;
-            padding: 10px;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-
-        /* Style the dropdown content (hidden by default) */
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #f9f9f9;
-            min-width: 160px;
-            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-            z-index: 1;
-        }
-
-        /* Style the links inside the dropdown */
-        .dropdown-content p {
-            color: #000;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-        }
-
-        /* Change color of dropdown links on hover */
-        .dropdown-content p:hover {
-            background-color: #f1f1f1;
-        }
-
-        /* Show the dropdown menu on hover */
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
-
-        /* Change the background color of the dropdown button when the dropdown content is shown */
-        .dropdown:hover .dropdown-btn {
-            background-color: #ddd;
-        }
-
-        /* Add a bottom border to the last option in the dropdown */
-        .dropdown-content p:last-child {
-            border-bottom: 1px solid #ddd;
-        }
+      /* styles for the module */
+      .module {
+        position: fixed;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px;
+        display: none;
+        z-index: 999;
+      }
+      /* styles for the close button */
+      .module-close {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+      }
     </style>
-</head>
+  </head>
+  <body>
+    <button onclick="addToCart()">Add to Cart</button>
 
-<body>
-    <div class="dropdown">
-        <button class="dropdown-btn">Filter By</button>
-        <div class="dropdown-content">
-            <p href="#">Option 1</p>
-            <p href="#">Option 2</p>
-            <p href="#">Option 3</p>
-        </div>
-    </div>
+   
 
-</body>
+    <script>
+      function addToCart() {
+        // show the module
+        const module = document.getElementById('cart-module');
+        module.style.display = 'block';
 
+        // play the audio
+        if ('speechSynthesis' in window) {
+          const message = new SpeechSynthesisUtterance('Product added to cart');
+          const femaleVoices = speechSynthesis.getVoices().filter(voice => voice.name.includes('Female'));
+          if (femaleVoices.length > 0) {
+            message.voice = femaleVoices[0];
+          }
+          speechSynthesis.speak(message);
+        }
+
+        // add your cart logic here
+      }
+
+      function closeModule() {
+        // hide the module
+        const module = document.getElementById('cart-module');
+        module.style.display = 'none';
+      }
+    </script>
+  </body>
 </html>

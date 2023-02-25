@@ -1,44 +1,281 @@
-header {
-    height: 200px;
-    border: 2px solid black;
-}
 .allproducts {
     text-align: center;
     font-size: 26px;
-    margin-top: 230px;
+    margin-top: 50px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .productbigdiv {
-    width: 95%;
+    width: 80%;
     margin: auto;
     border: 2px solid black;
     height: 1000px;
     display: flex;
+    position: relative;
 }
+
 .leftsidepr {
-    width: 30%;
+    width: 25%;
     margin: auto;
     height: 1000px;
-    border: 2px solid rgb(0, 0, 0);
+    /* border: 2px solid rgb(0, 0, 0); */
     padding: 20px;
     position: sticky;
 }
+
 #rightsidepr {
-    width: 60%;
+    width: 70%;
     margin: auto;
     height: 1000px;
     padding: 20px;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 20px
-    ;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
 }
+
 .appendpr {
-    border: 2px solid rgb(255, 217, 0);
+    /* border: 2px solid rgb(255, 217, 0); */
+    padding: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    line-height: 15px;
+}
+
+.appendpr img {
+    width: 230px;
+}
+
+.paraprappend2 {
+    font-size: 16px;
+    text-align: center;
+}
+
+.paraprappend {
+    text-align: left;
+    font-size: 14px;
+    text-transform: capitalize;
+    color: #FC2779;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.paraprappend3 {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 14px;
+    color: #a39c9f;
+}
+
+.paraprappend4 {
+    color: #a39c9f;
+}
+
+.somethingprice {
+    color: #000000;
+    font-weight: 600;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 5px;
+}
+
+.disocuntoff {
+    color: green;
+    margin-left: 10px;
+}
+
+.paraprappend5 {
+    text-align: center;
+}
+
+.cartpr {
+    display: inline;
+    width: 80%;
+    padding: 8px;
+    border: none;
+    background-color: #FC2779;
+    color: white;
+    height: 100%;
+    /* margin-left: 5px; */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+.cartpr:hover {
+    background-color: #a39c9f;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.likepr {
+    display: inline;
+    width: 20%;
+    border: none;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    /* border: 2px solid red; */
+}
+.likepr:hover {
+    /* padding: 10px; */
+    /* background-color: #FC2779; */
+    cursor: pointer;
+}
+.likepr img {
+    height: 18px;
+    width: 18px;
+    margin-top: 5px;
+    /* margin-top: 19px; */
+}
+.samprappend {
+    width: 100%;
+    border: 2px solid grey;
+}
+
+/* -----------------------------------left side top wala kamm----------------------------------------------------------------- */
+
+.topselect {
+    /* width: 100%; */
+    background-color: #FC2779;
+    color: white;
+    /* border: 2px solid black; */
+    padding: 10px;
+    margin: auto;
+}
+
+#popuselect {
+    font-size: 16px;
+    width: 75%;
+    border: none;
     padding: 10px;
 }
-.appendpr img{
-    width: 200px;
+
+select option {
+    display: block;
+    padding: 10px;
+    margin-top: 15px;
 }
+
+#labelsort {
+    font-size: 16px;
+}
+
+
+/* ------------------------------filter part------------------------------------------------             1              */
+#optionsSelect {
+    display: none;
+}
+
+.filteredOption {
+    display: block;
+}
+
+#filterBtn {
+    width: 100%;
+    font-size: 16px;
+    padding: 10px;
+    background-color: #FC2779;
+    color: white;
+    border: none;
+}
+
+#optionsSelect p {
+    text-align: center;
+    width: 50%;
+    background-color: #fbfbfb;
+    color: #FC2779;
+    display: block;
+    border: 1px solid black;
+    margin: auto;
+    margin-top: 15px;
+    padding: 10px;
+}
+
+#optionsSelect p:hover {
+    background-color: rgb(3, 0, 0);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    /* border: 2px solid rgb(255, 0, 0); */
+}
+
+
+/* ------------------------------filter part------------------------------------------------             2             */
+#optionsSelect2,
+#optionsSelect3,
+#optionsSelect4,
+#optionsSelect5,
+#optionsSelect6 {
+    display: none;
+}
+
+/* .filteredOption {
+    display: block;
+} */
+
+#filterBtn2,
+#filterBtn3,
+#filterBtn4,
+#filterBtn5,
+#filterBtn6 {
+    width: 100%;
+    font-size: 16px;
+    padding: 10px;
+    background-color: #FC2779;
+    color: white;
+    border: none;
+}
+
+#filterBtn2,
+#filterBtn,
+#filterBtn3,
+#filterBtn4,
+#filterBtn5,
+#filterBtn6 {
+    cursor: pointer;
+}
+
+#optionsSelect2 p,
+#optionsSelect3 p,
+#optionsSelect4 p,
+#optionsSelect5 p,
+#optionsSelect6 p {
+    text-align: center;
+    width: 50%;
+    background-color: #fbfbfb;
+    color: #FC2779;
+    display: block;
+    border: 1px solid black;
+    margin: auto;
+    margin-top: 15px;
+    padding: 10px;
+}
+
+#optionsSelect2 p:hover,
+#optionsSelect3 p:hover,
+#optionsSelect4 p:hover,
+#optionsSelect5 p:hover,
+#optionsSelect6 p:hover {
+    background-color: rgb(3, 0, 0);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    /* border: 2px solid rgb(255, 0, 0); */
+}
+
+.module {
+    position: fixed;
+    top: 7%;
+    margin: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #4CAF50;
+    color: rgb(255, 255, 255);
+    display: none;
+    z-index: 999;
+    text-align: center;
+    font-weight: 550;
+    padding: 20px;
+  }
+  /* styles for the close button */
+  .module-close {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+  }
