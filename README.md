@@ -11,7 +11,7 @@
 
 ## Installation
  
-npm i  --> for installing the backend \n
+npm i  --> for installing the backend <br>
 npm run start --> for starting the backend
 ctrl + c --> stop backend
 
